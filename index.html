@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ROCK PAPER SCISSORS GAME BY GEORGE JOSEPH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <!-- the entire web screen -->
+    <section>
+      <!-- intro name diisplay -->
+      <div class="intro-head fadeIn">
+        <h2>ROCK PAPER SCISSORS</h2>
+        <h3>GAME</h3>
+      </div>
+
+      <!-- score board container in the game page -->
+      <div class="score-board fadeOut">
+        <h2>score</h2>
+        <div class="player-computer-score">
+            <div class="container-player">
+                <h4 class="player">player</h4>
+                <p class="player-score">0</p>
+            </div>
+            <div class="container-computer">
+                <p class="computer-score">0</p>
+                <h4 class="computer">computer</h4>
+            </div>
+        </div>
+      </div>
+
+      <!-- intro page option with the play and highscore button -->
+      <div class="intro-options fadeIn">
+          <button class="play-btn">play</button>
+          <!-- high button not in use yet -->
+          <!-- <button class="highscore-btn">highscore</button> -->
+        </div>
+      </div>
+      <!-- container displaying "please type your name" -->
+      <div class="input-name fadeOut">
+        <div id="error"></div>
+        <form action="/" method="get" class="form">
+          <div>
+            <label for="name">type your name here</label>
+            <div></div>
+            <input type="text" id="name" class="name" name="name" required>
+            <button class="enter-btn" type="button"> enter </button>
+          </div>
+        </form>
+          <button class="back">back</button> 
+      </div>
+
+      <!-- highscore section not in use yet -->
+
+      <!-- <div class="highscore fadeOut">
+        <div class="container-highscore">
+          <h3 class="hs-section">HIGHSCORES</h3>
+          <li>
+            <ol>1.</ol>
+            <ol>2.</ol>
+            <ol>3.</ol>
+            <ol>4.</ol>
+            <ol>5.</ol>
+            <ol>6.</ol>
+            <ol>7.</ol>
+            <ol>8.</ol>
+            <ol>9.</ol>
+            <ol>10.</ol>
+          </li>
+          <button class="back back-hs">back</button>
+        </div>
+      </div> -->
+
+      <!-- container for the game play -->
+      <div class="game-play-container fadeOut">
+          <div class="player-options">
+              <button class="btn rock-btn">rock</button>
+              <button class="btn paper-btn">paper</button>
+              <button class="btn scissors-btn">scissors</button>
+          </div>
+          <!-- player hand -->
+          <div class="hands player-hand">     
+            <img src="./assets/rock.png" alt="" class="hand-size Phands"></div>
+          <h4 class="ready">READY !</h4>
+          <!-- computer hand -->
+          <div class="hands computer-hands">
+            <img src="./assets/rock.png" alt="" class="hand-size Chands">
+          </div>
+          <div class="game-options">
+            <button class="btn pause-btn">pause</button>
+            <button class="btn restart-btn">restart</button>
+            <button class="btn endgame-btn">endgame</button>
+        </div>
+      </div>
+      <footer>Developed by George Joseph</footer>
+      <div class="overlay fadeOut">
+        <h1 class="resume">game paused</h1>
+        <button class="play">resume</button>
+      </div>
+      <div class="overlay-winner fadeOut">
+        <h1 class="player-win">You win !</h1>
+        <button class="new-game">new game</button>
+        <button class="home">home</button>
+      </div>
+      <div class="overlay-computer-winner fadeOut">
+        <h1 class="player-win">Computer win !</h1>
+        <button class="new-game-comp">new game</button>
+        <button class="home-comp">home</button>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
